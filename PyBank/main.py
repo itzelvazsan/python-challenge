@@ -89,6 +89,7 @@ results_printing = (
     f'Greatest Increase in Profits: {increase_date} (${greatest_increase}) \n'
     f'Greatest Decrease in Profits: {decrease_date} (${greatest_decrease}) \n')
 
+print(results_printing)
 
 # Write the results to a text file
 with open(file_to_output, "w") as txt_file:
