@@ -81,12 +81,13 @@ total_net += 1088983 #Add value of first row because of the exclusion
 average_change = round(sum(net_change_ls) / (len(dates)), 2)
 
 # Print the output
-results_printing = str(print(f"FINANCIAL ANALYSIS \n-------------------------\n" 
-                         f"Total Months: {total_months} -------- \n"
-                         f'Total Net: ${total_net} ------ \n'
-                         f'Average Change: ${average_change} --- \n'
-                         f'Greatest Increase in Profits: {increase_date} (${greatest_increase}) \n'
-                         f'Greatest Decrease in Profits: {decrease_date} (${greatest_decrease}) \n'))
+results_printing = (
+    f"FINANCIAL ANALYSIS \n-------------------------\n" 
+    f"Total Months: {total_months} -------- \n"
+    f'Total Net: ${total_net} ------ \n'
+    f'Average Change: ${average_change} --- \n'
+    f'Greatest Increase in Profits: {increase_date} (${greatest_increase}) \n'
+    f'Greatest Decrease in Profits: {decrease_date} (${greatest_decrease}) \n')
 
 
 # Write the results to a text file
